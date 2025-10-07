@@ -2,10 +2,6 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 
-import matplotlib.pyplot as plt
-import seaborn as sns
-import joblib
-
 import sklearn
 sklearn.set_config(transform_output="pandas")
 
@@ -19,6 +15,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import OneHotEncoder, StandardScaler, RobustScaler, MinMaxScaler, OrdinalEncoder, TargetEncoder
 from sklearn.model_selection import GridSearchCV, KFold
+import joblib
 
 
 model = joblib.load('RF_ml_pipeline.pkl')
